@@ -1,49 +1,62 @@
+// import { PureComponent } from 'react';
+import "./App.css";
+// import ClickCountertwo from "./compontents/ClickCountertwo";
+import CompoenetC from "./compontents/CompoenetC";
+// import Countertwo from "./compontents/Countertwo";
+// import ClickCounter from './compontents/ClickCounter';
+// import HoverCounter from './compontents/HoverCounter';
+// import HoverCounterTwo from "./compontents/HoverCounterTwo";
+// import User from "./compontents/User";
+import { UserProvider } from "./compontents/UserContext";
+// import ErrorBundary from './compontents/ErrorBundary';
+// import Hero from './compontents/Hero';
+// import FocusInput from './compontents/FocusInput';
+// import FRParentInput from './compontents/FRParentInput';
+// import PortalDemo from './compontents/PortalDemo';
+// import PureCompo from './compontents/PureCompo';
+// import ParentComponte from './compontents/ParentComponte';
+// import RefDemo from './RefDemo';
 
-import { PureComponent } from 'react';
-import './App.css';
-// import FragementDemo from './compontents/FragementDemo';
-// import Table from './compontents/Table';
-// import LifecycleA from './LifecycleA';
-// import Lifecycke from './LifecycleA';
-// import Inline from './compontents/Inline';
-// import NameList from './compontents/NameList';
-// import UserGreetings from './compontents/UserGreetings';
-// import ParentCompontent from './compontents/ParentCompontent';
-// import Classclick from './compontents/Classclick';
-// import Counter from './compontents/Counter';
-// import EvenBind from './compontents/EvenBind';
-// import FunctionClick from './compontents/FunctionClick';
-// import { Greet } from './compontents/Greet';
-// import Welcome from './compontents/Welcome';
-// import Sylesheet from './compontents/Sylesheet';
-// import './appSyle.css'
-// import style from './appStyles.module.css'
-// import Form from './compontents/Form';
 function App() {
   return (
     <div className="App">
-        {/* <h1 className='error'>Error</h1> */}
-        {/* <h1 className={style.succes}>success</h1> */}
-      {/* <h1>The React App</h1>  */}
-         {/* <Greet name="Shijil" heroName="Iron man" /> */}
-         {/* <Welcome name="Shijil" heroName="Iron man" /> */}
-         {/* <FunctionClick /> */}
-         {/* <Counter /> */}
-         {/* <Classclick /> */}
-         {/* <EvenBind /> */}
-         {/* <ParentCompontent /> */}
-         {/* <UserGreetings  /> */}
-         {/* <NameList /> */}
-         {/* <Sylesheet primary={true} /> */}
-         {/* <Inline /> */}
-         {/* <Form /> */}
-         {/* <h1></h1> */}
-         {/* <LifecycleA /> */}
-         {/* <FragementDemo /> */}
-         {/* <Table /> */}
-         <PureCompo />
+      {/* <ParentComponte /> */}
+      {/* <RefDemo /> */}
+      {/* <FocusInput /> */}
+      {/* <FRParentInput /> */}
+      {/* <PortalDemo /> */}
+      {/* <ErrorBundary>
+            <Hero HeroName="Batman"/>   
+      </ErrorBundary>
+      <ErrorBundary>
+            <Hero HeroName="Superman" />     
+      </ErrorBundary>
+      <ErrorBundary>
+            <Hero HeroName="Joker"/>      
+      </ErrorBundary>
+      <ErrorBundary>
+         <Hero HeroName="iron man"/>
+      </ErrorBundary> */}
+      {/* <ClickCounter name="shijil" />
+      <HoverCounter /> */}
+      {/* <ClickCountertwo /> */}
+      {/* <HoverCounterTwo />
+      <User render={(isLoggedIN)=> isLoggedIN ?  'shijil' : 'Guest'}/> */}
+      {/* <Countertwo
+        render={(count, incrementCount) => (
+          <ClickCountertwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <Countertwo
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      /> */}
+      <UserProvider value="shijil">
+          <CompoenetC />
+      </UserProvider>
+       
     </div>
   );
 }
-
 export default App;

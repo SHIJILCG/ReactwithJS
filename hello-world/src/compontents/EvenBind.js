@@ -27,7 +27,7 @@ export default class EvenBind extends Component {
             {/* <button onClick={this.clickhandler}>Click</button > */}
             {/* <button onClick={()=>this.clickhandler()}>Click</button > */}
             {/* <button onClick={this.clickhandler.bind(this)}>Click</button > */}
-            <button onClick={this.clickhandler}>Click Me </button >
+            <button onClick={this.clickhandler}>Click Me</button >
        </div>
     )
   }
